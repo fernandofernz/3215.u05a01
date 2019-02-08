@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    
+    
+
+<head>
+    <title>Registration Page</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <script src="js/registration.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="top">
+            <a class="logo" href="index.html">CapellaVolunteers<span class="dotcom">.org</span></a>
+        </div>
+        <nav>
+            <ul class="topnav">
+                <li><a href="index.html">Home</a>
+                </li>
+                <li><a href="invitation.html">Invitation</a>
+                </li>
+                <li><a href="gallery.html">Gallery</a>
+                </li>
+                <li><a href="registration.html" class="active">Registration</a>
+                </li>
+            </ul>
+
+        </nav>
+    </header>
+    
+        <section id="pageForm">
+        <form action="/registration.html" onsubmit="return validate()" method="get" >
+            
+            <label for="userName">Username:</label><label2 id="userNameWarning"></label2>
+            <input type="text" name="userName" id="userName" placeholder="Enter your Username" />
+
+            <label for="Password">Password:</label><label2 id="passwordWarning"></label2>
+            <input type="password" name="password" id="password" placeholder="Enter your Password" />
+
+            <label for="passwordVerify">Verify your Password:
+            </label><label2 id="passwordVerifyWarning"></label2>
+            <input type="password" name="passwordVerify" id="passwordVerify" placeholder="Enter in your Password again" />
+
+            <label for="firstName">First Name:
+            </label><label2 id="firstNameWarning"></label2>
+            <input type="text" name="firstName" id="firstName" placeholder="Enter your First Name" />
+
+            <label for="hostName">Last Name:
+            </label><label2 id="hostNameWarning"></label2>
+            <input type="text" name="lastName" id="lastName" placeholder="Enter your Last Name" />
+            
+            <label for="email">Email:
+            </label><label2 id="emailWarning"></label2>
+            <input type="text" name="email" id="email" placeholder="Enter your Email Address" />
+			
+            <label for="phoneNumber">Phone Number
+            </label><label2 id="phoneNumberWarning"></label2>
+            <input type="text" name="phoneNumber" id="phoneNumber" placeholder="Enter your Phone Number" />
+			
+            <label for="signUpNewsletter">Sign up for newsletter:
+            </label>
+			  <input type="radio" name="signUpNewsletter" value="Yes" checked> Yes 
+				<input type="radio" name="signUpNewsletter" value="No"> No 
+            
+            <input type="submit" formaction="confirm.html" value="Submit">
+        </form>
+    </section>
+
+</body>
+
+</html>
