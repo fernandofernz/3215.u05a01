@@ -1,6 +1,6 @@
 //FUnction to parse data from urls
 function getUrlParameter(name) {
-    console.log(name);
+    //console.log(name);
     name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
     var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
     var results = regex.exec(location.search);
@@ -39,7 +39,7 @@ function getParameters () {
 
     //storing signUpNewsletter parameter in var
     var signUpNewsletter = getUrlParameter('signUpNewsletter');
-    console.log(signUpNewsletter);
+    //console.log(signUpNewsletter);
 
      //Create cookies
      //User Name Cookie
