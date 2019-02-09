@@ -34,7 +34,7 @@ function validate() {
     document.getElementById("passwordWarning").innerHTML = "";
     document.getElementById("passwordVerifyWarning").innerHTML = "";
     document.getElementById("firstNameWarning").innerHTML = "";
-    document.getElementById("hostNameWarning").innerHTML = "";
+    document.getElementById("lasttNameWarning").innerHTML = "";
     document.getElementById("emailWarning").innerHTML = "";
     document.getElementById("phoneNumberWarning").innerHTML = "";
     
@@ -85,10 +85,10 @@ function validate() {
     
     //lastName verification
     if (lastName === "") {
-        document.getElementById("hostNameWarning").innerHTML = " *Please provide a last name!";
+        document.getElementById("lasttNameWarning").innerHTML = " *Please provide a last name!";
         lastNameError = true;
     } else if (!lastName.match(letters)) {
-        document.getElementById("hostNameWarning").innerHTML = " *Field must be only characters!";
+        document.getElementById("lasttNameWarning").innerHTML = " *Field must be only characters!";
         lastNameError = true;
     }
     
